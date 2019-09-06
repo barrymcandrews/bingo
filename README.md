@@ -7,6 +7,8 @@ This is a very simple bingo card generator.
 3) Start the app by running `python3.7 app.py`
 4) Navigate to http://127.0.0.1:5000/ in your web browser
 5) Choose the number of bingo cards to generate by modifying the URL
+    * Example URL for 12 boards: http://127.0.0.1:5000/?boards=12
+
+6) Print the cards from your web browser
  
-##### Example URL for 12 boards: 
- http://127.0.0.1:5000/?boards=12
+
