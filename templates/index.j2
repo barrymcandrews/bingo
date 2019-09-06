@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        {% for board in boards %}
+            <table >
+                <thead>
+                    <tr><th colspan="5" class="title">Thanksgiving Bingo</th></tr>
+                </thead>
+                <tbody>
+                    {% for row in board.cells %}
+                        <tr>
+                            {% for column in row %}
+                                {% if column == 'Free Space' %}
+                                    <td><img src="static/kathy.jpg" /></td>
+                                {% else %}
+                                     <td>{{ column }}</td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </body>
+</html>
